@@ -3,3 +3,10 @@
 *.int
 *.lk
 *.zip
+/.venv
+/.vscode
+.env
+.DS_Store
+/neurologics.egg-info
+*.pyc
+/outputs/inference_cache
