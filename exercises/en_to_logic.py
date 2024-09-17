@@ -1,3 +1,6 @@
+"""
+This script uses an LLM to convert natural language descriptions of sets into formal set-theoretical definitions. It then compares two sets to determine if they are equal or different. The LLM is configured to output structured responses following a predefined schema.
+"""
 import asyncio
 from pydantic import BaseModel, Field
 from typing import Literal
@@ -49,6 +52,8 @@ async def main():
     cat_set = cat_responses[0].json_object
     print(dog_set)
     print(cat_set)
+
+    
     assert isinstance(dog_set, GeneratedJsonObject)
     assert isinstance(cat_set, GeneratedJsonObject)
 
